@@ -187,3 +187,22 @@ color:#CCCCCC;
 .italic {
   font-style: italic;
   }
+
+
+ol li + li {
+    margin-top: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
