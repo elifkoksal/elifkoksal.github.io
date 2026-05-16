@@ -12,7 +12,7 @@ body {
 	background-image:url(background.png)
 	text-align: left;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	color: #F1F5F8;
 }
 *
@@ -163,7 +163,7 @@ width: 921px;
 height:74px;
 background: url(footer.png) no-repeat;
 text-align:right;
-font-size:13px;
+font-size:14px;
 line-height:75px;
 }
 
@@ -193,16 +193,33 @@ ol li + li {
     margin-top: 1rem;
 }
 
-img {
+.right-img-large,
+.right-img-small {
+    float: right;
     display: block;
     max-width: 100%;
     height: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
-.profile-photo {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    display: block;
-    border-radius: 8px;
+.right-img-large {
+    width: 304px;
+}
+
+.right-img-small {
+    width: 236px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .right-img-large,
+    .right-img-small {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 304px;
+    }
+
 }
